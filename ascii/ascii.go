@@ -48,6 +48,7 @@ func loadBanner(filename string) {
 
 // GetLetterArray retrieves the ASCII art representation for a given character from the specified banner file
 func GetLetterArray(char rune, bannerStyle string) []string {
+	
 	banner, ok := bannerMap[bannerStyle]
 	if !ok {
 		fmt.Println("File doesn't exist")
@@ -90,7 +91,7 @@ func PrintAscii(str, bannerStyle string) {
 				fmt.Println("Error: File content modified")
 				return
 			}
-			fmt.Printf("%s", letter[i-1])
+			fmt.Printf("%s", letter[i])
 		}
 		fmt.Println()
 	}
