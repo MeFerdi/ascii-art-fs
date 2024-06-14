@@ -14,11 +14,12 @@ var bannerMap map[string]string
 // init initializes the bannerMap and loads the ASCII art from the banner files
 func init() {
 	bannerMap = make(map[string]string)
+	loadBanner("standard.txt")
 }
 
 // loadBanner reads the contents of a banner file and stores it in the bannerMap
 func loadBanner(filename string) {
-	filePath := filepath.Join("../banner", filename)
+	filePath := filepath.Join("./banner", filename)
 	file, err := os.Open(filePath)
 	if err != nil {
 		fmt.Printf("Error opening file %s: %v\n", filePath, err)
