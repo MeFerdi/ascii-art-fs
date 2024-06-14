@@ -1,5 +1,5 @@
 
-# ASCII Art Generator
+# Ascii-art-fs
 
 This project is a Go implementation of ASCII art using the file system API. It allows users to generate ASCII art for a given string using different banner styles.
 
