@@ -15,6 +15,8 @@ var bannerMap map[string]string
 func init() {
 	bannerMap = make(map[string]string)
 	loadBanner("standard.txt")
+	loadBanner("shadow.txt")
+	loadBanner("thinkertoy.txt")
 }
 
 // loadBanner reads the contents of a banner file and stores it in the bannerMap
