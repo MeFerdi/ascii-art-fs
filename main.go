@@ -11,7 +11,7 @@ import (
 func main() {
 	// Check if the command-line arguments are valid
 	if len(os.Args) < 2 || len(os.Args) > 3 {
-		fmt.Println("Usage: go run main.go <input_string> [banner_style]\n\nEX: go run . something standard")
+		fmt.Println("Usage: go run . [STRING] [BANNER]\n\nEX: go run . something standard")
 		return
 	}
 
