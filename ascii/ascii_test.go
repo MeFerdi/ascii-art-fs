@@ -39,18 +39,3 @@ func TestPrintAscii(t *testing.T) {
 		})
 	}
 }
-
-// Helper function to compare string slices
-func equalSlices(a, b []string) bool {
-	if len(a) != len(b) {
-		return false
-	}
-
-	for i := range a {
-		if i >= len(b) || a[i] != b[i] {
-			return false
-		}
-	}
-
-	return true
-}
