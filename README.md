@@ -137,6 +137,11 @@ Step 7: **Create a Pull Request**
 
 5.Click Create pull request to submit your changes for review.
 
+## Team
+> - Dennis Mbuya
+> - Brian Bantu
+> - Ferdynand Odhiambo
+
 ## Credit
 
 https://www.zone01kisumu.ke
