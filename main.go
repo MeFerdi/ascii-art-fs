@@ -58,7 +58,6 @@ func main() {
 			}
 		} else {
 			fs.PrintAscii(line, bannerStyle) // Call the PrintAscii function from the ascii package to print ASCII art
-			fmt.Println()
 		}
 	}
 }
