@@ -48,11 +48,10 @@ func loadBanner(filename string) {
 
 // GetLetterArray retrieves the ASCII art representation for a given character from the specified banner file
 func GetLetterArray(char rune, bannerStyle string) []string {
-	
 	banner, ok := bannerMap[bannerStyle]
 	if !ok {
 		fmt.Println("File doesn't exist")
-		os.Exit(0)
+		os.Exit(1)
 	}
 	alphabet := strings.Split(banner, "\n")
 	start := (int(char) - 32) * 9
