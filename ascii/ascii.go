@@ -112,12 +112,6 @@ func PrintAscii(str, bannerStyle string) {
 			// Get the ASCII art for the character
 			arr := GetLetterArray(rune(letter), bannerStyle)
 
-			if len(arr) == 0 {
-
-				fmt.Println("File doesn't exist")
-				return
-			}
-
 			// Append the ASCII art to the letters slice
 			letters = append(letters, arr)
 
